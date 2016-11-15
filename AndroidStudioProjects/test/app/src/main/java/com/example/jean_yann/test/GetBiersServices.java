@@ -6,7 +6,12 @@ import android.content.Context;
 import android.content.IntentFilter;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
@@ -81,6 +86,24 @@ public class GetBiersServices extends IntentService {
             in.close();
         } catch(Exception e){
             e.printStackTrace();
+        }
+    }
+
+    public JSONArray getBiersFromFile(){
+        try{
+            InputStream is = new FileInputStream(getCacheDir()+"/"+"bieres.json");
+            byte[] buffer = new byte[is.available()];
+            is.read(buffer);
+            is.close();
+            return new JSONArray(new String(buffer,"UTF-8"));
+        }
+        catch (IOException e){
+            e.printStackTrace();
+            return new JSONArray();
+        }
+        catch (JSONException e){
+            e.printStackTrace();
+            return new JSONArray();
         }
     }
 }
