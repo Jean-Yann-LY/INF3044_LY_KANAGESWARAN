@@ -12,6 +12,8 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
+    RecyclerView rv = (RecyclerView) findViewById(R.id.rv_biere);
+    BieresAdapter mAdapter;
 
    // public static final String BIERS_UPDATE = "B";
      public static final String BIERS_UPDATE = "com.octip.cours.inf4042_11BIERS_UPDATE";
@@ -34,6 +36,8 @@ public class SecondActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), getString(R.string.download), Toast.LENGTH_LONG).show();
         }
     }
+
+
 
 
 }
