@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="texte1">Hello !</string>
+    <string name="texte2">JY</string>
+    <string name="texte_bouton">Clic EN</string>
+</resources>

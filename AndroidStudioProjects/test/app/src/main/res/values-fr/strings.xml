@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texte1">Bonjour !</string>
+    <string name="texte2">AMMALLAN</string>
+    <string name="texte_bouton">Clic FR</string>
+</resources>

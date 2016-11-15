@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="@string/texte_bouton"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:id="@+id/button"
+        android:layout_width="0dp" />
+
+    <TextView
+        android:text="@string/texte1"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:id="@+id/textView"
+        android:layout_width="0dp" />
+
+    <TextView
+        android:text="@string/texte2"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:id="@+id/textView2"
+        android:layout_width="0dp" />
+</LinearLayout>
