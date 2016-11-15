@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.activity:
 
-               // Intent in = new Intent(this,SecondActivity.class);
-                //startActivity(in);
+                Intent in = new Intent(this,SecondActivity.class);
+                startActivity(in);
                 GetBiersServices.startActionBeer(this);
                 return true;
 

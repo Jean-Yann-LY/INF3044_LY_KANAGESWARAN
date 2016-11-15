@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context , Intent intent){
             //Log.d("download",getIntent().getAction());
-            Toast.makeText(getApplicationContext(), getString(R.string.texte1), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.download), Toast.LENGTH_LONG).show();
         }
     }
 

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">test</string>
     <string name="texte1">textView1</string>
+    <string name="download">Téléchargement terminé</string>
     <string name="texte2">textView2</string>
     <string name="texte_bouton">new bouton</string>
 </resources>

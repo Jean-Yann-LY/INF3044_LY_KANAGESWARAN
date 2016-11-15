@@ -51,7 +51,7 @@ public class GetBiersServices extends IntentService {
         try{
             url = new URL("http://binouze.fabrigli.fr/bieres.json");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("Get");
+            conn.setRequestMethod("GET");
             conn.connect();
             if(HttpURLConnection.HTTP_OK == conn.getResponseCode()){
                 copyInputStreamToFile(conn.getInputStream(),
