@@ -23,7 +23,7 @@ public class BieresAdapter extends RecyclerView.Adapter<BieresAdapter.BiereHolde
 
     @Override
     public BiereHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_biere_element,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_biere_element,null,false);
         BiereHolder bh = new BiereHolder(v);
         return bh;
     }
@@ -52,6 +52,12 @@ public class BieresAdapter extends RecyclerView.Adapter<BieresAdapter.BiereHolde
             name = (TextView) itemView.findViewById(R.id.rv_biere_element_name);
 
         }
+    }
+
+    void setNewBiere (JSONArray Json){
+        bieres = Json;
+        notifyDataSetChanged();
+
     }
 
 }

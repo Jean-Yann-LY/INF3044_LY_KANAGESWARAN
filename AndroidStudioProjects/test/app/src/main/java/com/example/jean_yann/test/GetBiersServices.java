@@ -89,21 +89,5 @@ public class GetBiersServices extends IntentService {
         }
     }
 
-    public JSONArray getBiersFromFile(){
-        try{
-            InputStream is = new FileInputStream(getCacheDir()+"/"+"bieres.json");
-            byte[] buffer = new byte[is.available()];
-            is.read(buffer);
-            is.close();
-            return new JSONArray(new String(buffer,"UTF-8"));
-        }
-        catch (IOException e){
-            e.printStackTrace();
-            return new JSONArray();
-        }
-        catch (JSONException e){
-            e.printStackTrace();
-            return new JSONArray();
-        }
-    }
+
 }
